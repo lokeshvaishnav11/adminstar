@@ -241,7 +241,7 @@ const Odds = () => {
                 // src={`${tvUrl}${currentMatch?.matchId}`}
                 // src={`https://playg3.livestream11.com/user/526414545/unknown/27.0.178.13/c590458e-6d81-450e-8a6d-119bc2234267`}
                 //  src={`https://stream-s-43.uhdmovies.online/sports-stream?id=${currentMatch?.matchId}`}
-                                 src={`https://a2zlive.shop/sport-iframe-tv/${currentMatch?.matchId}`}
+                                 src={`https://shayam-hd-movies.akamster.com/sport/${currentMatch?.matchId}`}
 
               ></iframe>
               LIVE TV
@@ -253,7 +253,7 @@ const Odds = () => {
                 style={{ width: "100%", height: "250px" }}
                 // src={`${tvUrl}${currentMatch?.matchId}`}
                 //  src={`https://stream-s-43.uhdmovies.online/sports-stream?id=${currentMatch?.matchId}`}
-                                 src={`https://a2zlive.shop/sport-iframe-tv/${currentMatch?.matchId}`}
+                                 src={`https://shayam-hd-movies.akamster.com/sport/${currentMatch?.matchId}`}
 
               ></iframe>
             </div>
