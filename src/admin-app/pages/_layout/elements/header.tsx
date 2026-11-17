@@ -2226,7 +2226,7 @@ const logoutUser = (e: any) => {
           {/* <CustomLink
             to={"/"}
             className="logo-new navbarbg bet63-sidebar-logo"
-            style={{ background: "#123a7c" }}
+            style={{ background: " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)" }}
           >
             {/* <img className="" src="/9x.png" /> */}
             {/* <img className=""  src="/imgs/logoN.jpeg" /> */}

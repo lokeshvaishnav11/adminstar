@@ -597,7 +597,7 @@
 //                 padding: "10px 14px",
 //                 background:
 //                   activeTab === tab.key
-//                     ? "#123a7c"
+//                     ? " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)"
 //                     : "#fff",
 //                 color:
 //                   activeTab === tab.key
@@ -1530,7 +1530,7 @@ const CommisionLenden: React.FC = () => {
                 padding: "10px 14px",
                 background:
                   activeTab === tab.key
-                    ? "#123a7c"
+                    ? " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)"
                     : "#fff",
                 color:
                   activeTab === tab.key

@@ -8310,7 +8310,7 @@ button.btn-close::after {
   min-height: 260px;
   max-height: 480px;
 
-  background-image: url("https://t3.ftcdn.net/jpg/11/01/70/16/240_F_1101701656_OycelBJ33tgHzPLYcjZmk04PRP4GMY6d.jpg");
+  /* background-image: url("https://t3.ftcdn.net/jpg/11/01/70/16/240_F_1101701656_OycelBJ33tgHzPLYcjZmk04PRP4GMY6d.jpg"); */
   background-size: cover;
   /* "top center" keeps the faces/subject in frame instead of
      getting cropped from the sides on narrow phone screens */

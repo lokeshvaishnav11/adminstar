@@ -1090,10 +1090,10 @@ const ListClients = () => {
                       {/* <th>Available Balance</th> */}
 
                       {/* <th>Engaged</th> */}
-                      {userState?.user?.comm && <> <th className="text-center">Match %</th>
+                      <> <th className="text-center">Match %</th>
                         <th className="text-center">Casino %</th>
                         <th className="text-center">Session %</th>
-                        <th className="text-center">Matka %</th> </>}
+                        <th className="text-center">Matka %</th> </>
 
                       {/* <th>Account Type</th> */}
                       {/* <th className="noExport">Actions</th> */}
@@ -1635,7 +1635,7 @@ Amount: ${mainBalanceUser(user).toFixed(2)}
 
 Name: ${user.code || "N/A"}
 
-Client Link: https://betx99.co`
+Client Link: https://star-99.com`
                                     : `Login Details:
 Username: ${user.username || "N/A"}
 Password: ${user.password}
@@ -1643,8 +1643,8 @@ Amount: ${mainBalanceUser(user).toFixed(2)}
 
 Name: ${user.code || "N/A"}
 
-Admin Link: https://admin.betx99.co/
-Client Link: https://betx99.co`
+Admin Link: https://admin.star-99.com/
+Client Link: https://star-99.com`
                                 )}`}
 
                                 target="_blank"
@@ -1816,10 +1816,10 @@ Client Link: https://betx99.co`
                           </td> */}
 
                             {/* <td>{user.exposerLimit ? user.exposerLimit : 0}</td> */}
-                            {userState.user.comm && <><td className="text-center">{user.mcom}%</td>
-                              <td className="text-center">{user?.cacom || 0}%</td>
+                            <><td className="text-center">{user.mcom}%</td>
+                              <td className="text-center">{user?.cascom || 0}%</td>
                               <td className="text-center">{user.scom}%</td>
-                              <td className="text-center">{user.matcom}%</td></>}
+                              <td className="text-center">{user.matcom}%</td></>
 
                             {/* <td>{RoleName[user.role!]}</td> */}
                           </tr>

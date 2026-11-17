@@ -559,14 +559,16 @@ useEffect(() => {
     <div className="bh-login-page">
       {/* HERO BACKGROUND */}
       <div className="bh-hero" />
-
+    
       {/* LOGIN CARD */}
       <main className="bh-card">
+
+     
         {/* LOGO */}
         <div className="bh-badge">
           <div className="bh-badge-inner">
             <img
-              src="https://betx99.co/imgs/logobet2.png"
+              src="/imgs/starlogo.png"
               alt="Admin Logo"
               className="logo-login"
             />

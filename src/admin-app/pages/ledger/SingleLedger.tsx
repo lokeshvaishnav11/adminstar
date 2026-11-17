@@ -290,7 +290,7 @@
 //                 borderRadius: 7,
 //                 padding: "10px 15px",
 //                 background:
-//                   activeTab === "lena" ? "#123a7c" : "#fff",
+//                   activeTab === "lena" ? " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)" : "#fff",
 //                 color:
 //                   activeTab === "lena" ? "#fff" : "#52647a",
 //                 fontSize: 13,
@@ -310,7 +310,7 @@
 //                 borderRadius: 7,
 //                 padding: "10px 15px",
 //                 background:
-//                   activeTab === "dena" ? "#123a7c" : "#fff",
+//                   activeTab === "dena" ? " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)" : "#fff",
 //                 color:
 //                   activeTab === "dena" ? "#fff" : "#52647a",
 //                 fontSize: 13,
@@ -930,7 +930,7 @@ const AllClientLedger = () => {
                 padding: "10px 15px",
                 background:
                   activeTab === "lena"
-                    ? "#123a7c"
+                    ? " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)"
                     : "#fff",
                 color:
                   activeTab === "lena"
@@ -956,7 +956,7 @@ const AllClientLedger = () => {
                 padding: "10px 15px",
                 background:
                   activeTab === "dena"
-                    ? "#123a7c"
+                    ? " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)"
                     : "#fff",
                 color:
                   activeTab === "dena"

@@ -612,7 +612,7 @@ const validationSchema = Yup.object().shape({
     .typeError("M.Comm. must be a number")
     .min(0, "M.Comm. cannot be less than 0")
    ,
-  cacom: Yup.number()
+  cascom: Yup.number()
     .typeError("M.Comm. must be a number")
     .min(0, "M.Comm. cannot be less than 0")
    ,
@@ -685,7 +685,7 @@ const EditUser = (data: any) => {
       setValue("mcom", selectedUserChild.mcom);
       setValue("scom", selectedUserChild.scom);
       setValue("matcom", selectedUserChild.matcom);
-      setValue("cacom", selectedUserChild.cacom);
+      setValue("cascom", selectedUserChild.cascom);
 
 
       const partnership: any = selectedUserChild.partnership || {};
@@ -713,7 +713,7 @@ const EditUser = (data: any) => {
       mcom: Number(formData.mcom),
       scom: Number(formData.scom),
       matcom: Number(formData.matcom),
-      cacom: Number(formData.cacom),
+      cascom: Number(formData.cascom),
 
       partnership: {},
     };
@@ -835,12 +835,12 @@ const EditUser = (data: any) => {
                  {/* MCOM */}
                 <div className="col-md-6">
                   <div className="form-group">
-                    <label htmlFor="cacom">Casino Commission:</label>
-                    <p>Current: {childData.cacom}%</p>
+                    <label htmlFor="cascom">Casino Commission:</label>
+                    <p>Current: {childData.cascom}%</p>
                     <input
                       className="form-control"
-                      {...register("cacom")}
-                      id="cacom"
+                      {...register("cascom")}
+                      id="cascom"
                       type="number"
                       min="0"
             

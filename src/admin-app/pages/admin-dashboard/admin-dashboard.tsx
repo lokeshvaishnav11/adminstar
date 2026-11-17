@@ -158,10 +158,10 @@ const AdminDashboard: React.FC = () => {
         {activeSection && (
           <section className="bet63-list-panel" style={{ marginTop: 24, padding: 16, background: "#fff", borderRadius: 12, border: "1px solid #dce4ee" }}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
-              <h3 style={{ margin: 0, color: "#123a7c", fontSize: 18 }}>
+              <h3 style={{ margin: 0, color: " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)", fontSize: 18 }}>
                 {activeSection === "matches" ? "Live Match List" : "Casino List"}
               </h3>
-              <button type="button" onClick={() => setActiveSection(null)} style={{ border: 0, background: "#123a7c", color: "white", borderRadius: 6, padding: "8px 14px", cursor: "pointer" }}>← Back to Dashboard</button>
+              <button type="button" onClick={() => setActiveSection(null)} style={{ border: 0, background: " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)", color: "white", borderRadius: 6, padding: "8px 14px", cursor: "pointer" }}>← Back to Dashboard</button>
             </div>
             {listLoading ? <p>Loading...</p> : listError ? <p style={{ color: "#c33" }}>{listError}</p> : activeSection === "matches" ? (
               <MatchList2 currentMatch={currentMatch} matchList={matchList} />
@@ -169,12 +169,12 @@ const AdminDashboard: React.FC = () => {
               <div className="bet63-casino-list" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(120px,1fr))", gap: 12 }}>
                 {gameList.filter((item: any) => !item.isDisable && item.match_id !== -1).map((item: any, index: number) => (
                   <CustomLink key={item.slug || index} to={`/casino/${item.slug}`} className="bet63-casino-game"
-                    style={{ display: "flex", flexDirection: "column", gap: 8, textAlign: "center", textDecoration: "none", color: "#123a7c", border: "1px solid #e0e6ee", borderRadius: 10, overflow: "hidden", paddingBottom: 10 }}>
+                    style={{ display: "flex", flexDirection: "column", gap: 8, textAlign: "center", textDecoration: "none", color: " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)", border: "1px solid #e0e6ee", borderRadius: 10, overflow: "hidden", paddingBottom: 10 }}>
                     <img src={item.image} alt={item.title} style={{ width: "100%", aspectRatio: "1 / 1", objectFit: "cover" }} />
                     <span style={{ fontSize: 12, fontWeight: 600, padding: "0 6px" }}>{item.title}</span>
                   </CustomLink>
                 ))}
-                <CustomLink to="/matka-books" style={{ display: "flex", flexDirection: "column", gap: 8, textAlign: "center", textDecoration: "none", color: "#123a7c", border: "1px solid #e0e6ee", borderRadius: 10, overflow: "hidden", paddingBottom: 10 }}>
+                <CustomLink to="/matka-books" style={{ display: "flex", flexDirection: "column", gap: 8, textAlign: "center", textDecoration: "none", color: " radial-gradient(at 80% 0%, rgba(201, 137, 21, 0.12), transparent 60%), linear-gradient(145deg, rgb(23, 20, 14) 0%, rgb(6, 7, 8) 55%, rgb(16, 13, 9) 100%)", border: "1px solid #e0e6ee", borderRadius: 10, overflow: "hidden", paddingBottom: 10 }}>
                   <img src="imgs/matka.png" alt="Matka" style={{ width: "100%", aspectRatio: "1 / 1", objectFit: "cover" }} />
                   <span style={{ fontSize: 12, fontWeight: 600 }}>Matka</span>
                 </CustomLink>
