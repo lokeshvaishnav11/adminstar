@@ -871,3 +871,525 @@
     flex-wrap: wrap;
   }
 }
+
+/* =========================================
+   ALL CLIENT LEDGER - NEW BOX DESIGN
+========================================= */
+
+.cl-ledger-page {
+  --cl-green: #008000;
+  --cl-red: #ed1040;
+  --cl-navy: #080820;
+  --cl-yellow: #ffc107;
+
+  background: #ffffff;
+  color: #222222;
+  padding: 15px;
+  font-family: Arial, sans-serif !important;
+  min-width: 0;
+}
+
+/* Page Header */
+
+.cl-ledger-heading {
+  background: var(--cl-navy);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cl-ledger-heading h1 {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cl-ledger-heading .cl-eyebrow,
+.cl-ledger-heading p {
+  display: none;
+}
+
+.cl-refresh-btn {
+  background: #ffc107 !important;
+  color: #111111 !important;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 14px;
+  font-weight: 600;
+}
+
+/* TOP TOTAL BOXES */
+
+.cl-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cl-summary-card {
+  padding: 20px 12px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cl-summary-lena {
+  background: #008000 !important;
+}
+
+.cl-summary-dena {
+  background: #ed1040 !important;
+}
+
+.cl-summary-card span {
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cl-summary-card strong {
+  color: #ffffff !important;
+  font-size: 27px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.cl-summary-card small {
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* LENA DENA SECTIONS */
+
+.cl-ledger-section {
+  background: #ffffff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.cl-section-heading {
+  background: #f1f1f1;
+  border-left: 5px solid #c58c00;
+  padding: 14px 12px;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.cl-section-heading h2 {
+  color: #222222;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.cl-section-mark {
+  display: none;
+}
+
+.cl-count {
+  background: #e2e2e2;
+  color: #333333;
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 11px;
+}
+
+/* TABLE SCROLL */
+
+.cl-ledger-table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cl-ledger-table-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.cl-ledger-table-scroll::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+}
+
+/* BOX TYPE TABLE */
+
+.cl-ledger-table {
+  width: 100%;
+  min-width: 580px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: auto;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+.cl-ledger-table th,
+.cl-ledger-table td {
+  border: 1px solid #d5d5d5 !important;
+  padding: 15px 12px;
+  text-align: center !important;
+  vertical-align: middle;
+}
+
+.cl-ledger-table th {
+  background: #f5f5f5 !important;
+  color: #111111 !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cl-ledger-table td {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 400;
+  background: #ffffff;
+}
+
+.cl-ledger-table td:first-child {
+  min-width: 125px;
+  max-width: 210px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.cl-ledger-table .cl-numeric {
+  text-align: center !important;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.cl-ledger-table tbody tr:nth-child(even),
+.cl-ledger-table tbody tr:hover {
+  background: #ffffff;
+}
+
+/* AGENT NAME */
+
+.cl-agent-link {
+  color: #222222 !important;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.cl-agent-link:hover {
+  color: #0056b3 !important;
+  text-decoration: underline;
+}
+
+/* LENA HAI - GREEN FINAL BOX */
+
+.cl-table-lena td.cl-final {
+  background: #008000 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* DENA HAI - RED FINAL BOX */
+
+.cl-table-dena td.cl-final {
+  background: #ed1040 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* TOTAL ROW */
+
+.cl-ledger-table .cl-total-row td {
+  background: #f5f5f5 !important;
+  color: #111111 !important;
+  font-weight: 700;
+  padding: 14px 10px;
+  border: 1px solid #d5d5d5 !important;
+}
+
+.cl-table-lena .cl-total-row td.cl-final {
+  background: #008000 !important;
+  color: #ffffff !important;
+}
+
+.cl-table-dena .cl-total-row td.cl-final {
+  background: #ed1040 !important;
+  color: #ffffff !important;
+}
+
+/* SETTLEMENT BUTTON */
+
+.cl-settle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: #ffc107 !important;
+  color: #222222 !important;
+  border: none;
+  border-radius: 3px;
+  padding: 9px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: none;
+}
+
+.cl-settle-btn svg {
+  color: #222222 !important;
+  font-size: 19px !important;
+}
+
+.cl-settle-btn:hover,
+.cl-refresh-btn:hover {
+  background: #e5ac00 !important;
+}
+
+.cl-settle-btn:active {
+  transform: scale(0.98);
+}
+
+/* EMPTY TABLE */
+
+.cl-ledger-table .cl-empty {
+  text-align: center !important;
+  padding: 25px !important;
+  color: #777777 !important;
+}
+
+/* SETTLEMENT POPUP */
+
+.cl-modal-header {
+  background: #080820 !important;
+}
+
+.cl-modal-balance {
+  background: #f5f5f5;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.cl-modal-balance strong {
+  color: #222222 !important;
+}
+
+.cl-field input:focus,
+.cl-field textarea:focus {
+  border-color: #c58c00;
+  box-shadow: 0 0 0 2px #ffc10726;
+}
+
+.cl-submit-btn {
+  background: #008000 !important;
+  color: #ffffff !important;
+}
+
+.cl-cancel-btn {
+  background: #eeeeee;
+  color: #222222;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 640px) {
+
+  .cl-ledger-page {
+    padding: 10px 8px;
+  }
+
+  .cl-ledger-heading {
+    padding: 13px 10px;
+    margin-bottom: 12px;
+  }
+
+  .cl-ledger-heading h1 {
+    font-size: 19px;
+  }
+
+  .cl-refresh-btn {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+  .cl-summary-grid {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .cl-summary-card {
+    padding: 16px 8px;
+    gap: 6px;
+  }
+
+  .cl-summary-card span {
+    font-size: 11px;
+  }
+
+  .cl-summary-card strong {
+    font-size: 21px;
+  }
+
+  .cl-summary-card small {
+    font-size: 10px;
+  }
+
+  .cl-section-heading {
+    padding: 12px 8px;
+    margin-bottom: 15px;
+  }
+
+  .cl-section-heading h2 {
+    font-size: 12px;
+  }
+
+  .cl-count {
+    font-size: 10px;
+  }
+
+  .cl-ledger-table {
+    min-width: 500px;
+  }
+
+  .cl-ledger-table th,
+  .cl-ledger-table td {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .cl-ledger-table td:first-child {
+    min-width: 110px;
+    max-width: 135px;
+  }
+
+  .cl-ledger-table .cl-total-row td {
+    font-size: 12px;
+    padding: 12px 7px;
+  }
+
+  .cl-settle-btn {
+    padding: 7px 8px;
+    font-size: 11px;
+  }
+
+  .cl-settle-btn svg {
+    font-size: 16px !important;
+  }
+}
+
+/* =========================================
+   CHILD CLIENT LEDGER - SEARCH BOX
+========================================= */
+
+.cl-ledger-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f5f5f5;
+  border: 1px solid #d5d5d5;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+.cl-ledger-search input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  color: #222222;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 10px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.cl-ledger-search input:focus {
+  border-color: #c58c00;
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.15);
+}
+
+.cl-ledger-search input::placeholder {
+  color: #888888;
+}
+
+.cl-ledger-search button {
+  height: 40px;
+  padding: 8px 16px;
+  background: #ffc107;
+  color: #222222;
+  border: 1px solid #e6ae00;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cl-ledger-search button:hover {
+  background: #e5ac00;
+}
+
+/* ERROR MESSAGE */
+
+.cl-ledger-error {
+  background: #fff0f0;
+  color: #d00025;
+  border: 1px solid #ed1040;
+  border-left: 4px solid #ed1040;
+  padding: 12px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+/* DISABLED BUTTONS */
+
+.cl-refresh-btn:disabled,
+.cl-settle-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 640px) {
+
+  .cl-ledger-search {
+    padding: 8px;
+    gap: 7px;
+    margin-bottom: 15px;
+  }
+
+  .cl-ledger-search input {
+    height: 36px;
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+
+  .cl-ledger-search button {
+    height: 36px;
+    font-size: 11px;
+    padding: 7px 12px;
+  }
+
+  .cl-ledger-error {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
